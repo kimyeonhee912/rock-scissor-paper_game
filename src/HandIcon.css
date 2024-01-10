@@ -1,0 +1,45 @@
+.HandButton-icon {
+  opacity: 1;
+  width: 55px;
+  height: 55px;
+  margin-top: 70px;
+}
+
+.Hand {
+  display: inline-block;
+  width: 207px;
+  height: 207px;
+  text-align: center;
+  background-image: url(./assets/yellow.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+}
+
+.HandButton {
+  width: 166px;
+  height: 166px;
+  border: none;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("./assets/purple.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.HandButton .HandButton-icon {
+  opacity: 0.45;
+  width: 55px;
+  height: 55px;
+}
+
+.HandButton:hover {
+  background-image: url("./assets/yellow.svg");
+}
+
+.HandButton:hover .HandButton-icon {
+  opacity: 0.87;
+}

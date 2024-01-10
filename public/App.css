@@ -1,0 +1,18 @@
+.App {
+  position: relative;
+  width: 100%;
+  min-width: 575px;
+  max-width: 620px;
+  margin: 45px auto;
+  padding: 50px;
+  border-radius: 44px;
+  text-align: center;
+  background: #6f00ff;
+  background-color: #6f00ff;
+  box-shadow: 0 4.2px 2px #5900cc, 0 -4.2px 2px #8500ff;
+}
+
+body {
+  background-color: #40089a;
+  color: #fff;
+}
