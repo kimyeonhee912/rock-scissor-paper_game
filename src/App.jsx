@@ -25,7 +25,6 @@ function App() {
   const [bet, setBet] = useState(1);
 
   const handleButtonClick = (nextHand) => {
-    //현재 nextHand는 HandButton.js에서 value값을 가지고 온거임.
     const nextOtherHand = generateRandomHand();
     const nextHistoryItem = getResult(nextHand, nextOtherHand);
     const comparison = compareHand(nextHand, nextOtherHand);
@@ -53,6 +52,8 @@ function App() {
     setBet(num);
   };
 
+  // margin-top: 70px;
+
   return (
     <div>
       <div className="button-container">
@@ -75,9 +76,14 @@ function App() {
       <div className="Box App-box">
         <div className="Box-inner">
           <div className="App-hands">
-            <HandIcon value={hand} />
+            <div className="Hand">
+              <HandIcon value={hand} name={true} />
+            </div>
             <div className="App-versus">VS</div>
-            <HandIcon value={otherHand} />
+
+            <div className="Hand">
+              <HandIcon value={otherHand} name={true} />
+            </div>
           </div>
         </div>
         <div className="App-bet">

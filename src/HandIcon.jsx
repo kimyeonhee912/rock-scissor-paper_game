@@ -9,12 +9,17 @@ const IMAGES = {
   paper: paperImg,
 };
 
-function HandIcon({ className, value }) {
+function HandIcon({ name, value }) {
   const src = IMAGES[value];
+  let className = "";
+
+  if (name === true) {
+    className = "icon";
+  }
   return (
-    <div className="Hand">
+    <>
       <img className={`HandButton-icon ${className}`} src={src} alt={value} />
-    </div>
+    </>
   );
 }
 
