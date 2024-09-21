@@ -5,7 +5,7 @@ function HandButton({ value, onClick }) {
   const handClick = () => onClick(value);
   return (
     <button className="HandButton" onClick={handClick}>
-      <HandIcon value={value} />
+      <HandIcon value={value} name={false} />
     </button>
   );
 }
