@@ -46,5 +46,3 @@
 - Font Awesome (아이콘)
 - CSS
 
-## Reference
-I made it by referring to the Code-It lecture
