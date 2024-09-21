@@ -1,34 +1,50 @@
-# Rock-Scissor-Paper game
+# 가위바위보 게임
 
-A game in which the winner is awarded points after selecting the Rock-paper-scissors button by betting points from 1 to 9
+이 프로젝트는 React와 Vite를 사용하여 만든 가위바위보 게임입니다. 사용자는 가위, 바위, 보 중 하나를 선택하고 컴퓨터와 대결하여 승리, 패배, 무승부의 결과를 확인할 수 있습니다. 
+
+## 설치 및 실행
+
+이 프로젝트를 클론한 후, 다음 단계를 따라 설치하고 실행할 수 있습니다.
+
+1. **레포지토리 클론**
+
+   ```bash
+   git clone [레포지토리 URL]
+   cd rps_game
+   ```
+   
+2. **의존성 섪치**
+
+  ```bash
+   npm install
+   ```
+3. **개발 서버 실행**
+
+   ```bash
+   npm run dev
+   ```
+브라우저에서 http://localhost:3000에 접속하여 게임을 즐길 수 있습니다.
+
+# 게임 규칙
+- 사용자와 컴퓨터가 각각 가위, 바위, 보 중 하나를 선택합니다.
+- 선택된 손의 결과에 따라 다음과 같은 규칙이 적용됩니다:
+- 가위는 보를 이깁니다.
+- 바위는 가위를 이깁니다.
+- 보는 바위를 이깁니다.
+- 결과는 승리, 패배, 무승부로 나타납니다.
+
+# 기능
+- 손 선택 버튼: 사용자가 가위, 바위, 보 중 하나를 선택할 수 있습니다.
+- 점수판: 사용자와 상대의 점수가 표시됩니다.
+- 베팅 시스템: 사용자는 1부터 9까지의 점수를 베팅할 수 있습니다.
+- 게임 기록: 이전 게임의 결과가 기록됩니다.
+- 초기화 버튼: 게임을 초기 상태로 되돌릴 수 있습니다.
+
+# 사용 기술
+- React
+- Vite
+- Font Awesome (아이콘)
+- CSS
 
 ## Reference
-
 I made it by referring to the Code-It lecture
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
